@@ -340,7 +340,7 @@ class Tooltip {
       this._cleanTipClass()
       this.element.removeAttribute('aria-describedby')
       EventHandler.trigger(this.element, this.constructor.Event.HIDDEN)
-      if(this._popper !== null){
+      if (this._popper !== null) {
         this._popper.destroy()
       }
     }
